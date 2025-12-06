@@ -1,0 +1,219 @@
+/* Layout general */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.page .main {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.page section {
+    margin-bottom: 3.5rem;
+}
+
+/* HERO */
+.page .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.page .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.page .hero-text {
+    flex: 1 1 280px;
+}
+
+.page .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.12);
+    color: #38bdf8;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.page .hero h1 {
+    font-size: clamp(2.4rem, 3vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.4rem;
+}
+
+.page .hero h2 {
+    font-size: 1.4rem;
+    color: #60a5fa;
+    font-weight: 500;
+    margin: 0 0 0.9rem;
+}
+
+.page .hero p {
+    margin: 0;
+    color: #9ca3af;
+    max-width: 36rem;
+}
+
+.page .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.8rem;
+}
+
+.page .hero-actions .primary {
+    background: linear-gradient(to right, #22c55e, #16a34a);
+    border: none;
+}
+
+.page .hero-avatar {
+    flex: 0 1 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.page .hero-card {
+    width: 100%;
+    max-width: 280px;
+    background-color: rgba(56, 189, 248, 0.12);
+}
+
+.page .hero-avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.page .hero-avatar-wrapper img {
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 3px solid #22c55e;
+}
+
+.page .hero-card-body {
+    padding-bottom: 1.25rem;
+}
+
+.page .hero-location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.3rem;
+    color: #9ca3af;
+}
+
+.page .hero-location i {
+    color: #f97316;
+}
+
+.page .hero-stack {
+    margin: 0;
+    color: #e5e7eb;
+    font-size: 0.95rem;
+}
+
+/* Secciones genéricas */
+.page .section-header {
+    margin-bottom: 1.8rem;
+}
+
+.page .section-header h3 {
+    font-size: 1.4rem;
+    margin: 0 0 0.3rem;
+}
+
+.page .section-header p {
+    margin: 0;
+    color: #9ca3af;
+}
+
+/* Sobre mí */
+.page .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.page .about-card p {
+    margin: 0;
+    color: #d1d5db;
+}
+
+/* Skills */
+.page .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.page .skill-card ul {
+    padding-left: 1.1rem;
+    margin: 0.3rem 0 0;
+}
+
+.page .skill-card li {
+    color: #d1d5db;
+    margin-bottom: 0.25rem;
+}
+
+/* Proyectos */
+.page .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.page .projects-grid p {
+    margin: 0 0 0.6rem;
+    color: #d1d5db;
+}
+
+/* Contacto */
+.page .contact-card-wrapper {
+    max-width: 480px;
+}
+
+.page .contact-card {
+    width: 100%;
+}
+
+.page .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.2rem 0;
+    color: #e5e7eb;
+}
+
+.page .contact-row i {
+    color: #38bdf8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .page .main {
+        padding-inline: 1rem;
+    }
+
+    .page .hero-content {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,20 @@
+.white-text .p-button-label {
+    color: white !important;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #e5e7eb;
+    color: #000000;
+    box-shadow: 0 0 12px rgba(148, 163, 184, 0.65);
+}
