@@ -1,0 +1,14 @@
+<p-galleria [value]="images"
+           [responsiveOptions]="responsiveOptions"
+           [containerStyle]="{ 'max-width': '640px' }"
+           [numVisible]="5">
+  <ng-template pTemplate="item" let-item>
+    <img [src]="item.itemImageSrc" style="width:100%" />
+  </ng-template>
+  <ng-template pTemplate="thumbnail" let-item>
+    <img [src]="item.thumbnailImageSrc" />
+  </ng-template>
+</p-galleria>
+
+
+<img src="../img/hola.png" alt="">
