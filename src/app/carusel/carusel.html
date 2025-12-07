@@ -1,14 +1,12 @@
-<p-galleria [value]="images"
-           [responsiveOptions]="responsiveOptions"
-           [containerStyle]="{ 'max-width': '640px' }"
-           [numVisible]="5">
-  <ng-template pTemplate="item" let-item>
-    <img [src]="item.itemImageSrc" style="width:100%" />
-  </ng-template>
-  <ng-template pTemplate="thumbnail" let-item>
-    <img [src]="item.thumbnailImageSrc" />
-  </ng-template>
-</p-galleria>
-
-
-<img src="../img/hola.png" alt="">
+<div class="flex overflow-hidden w-auto  fadeinright animation-duration-1000 animation-iteration-infinite-none">
+  <div class="flex-grow-1 flex align-items-center justify-content-center m-2 px-5 py-3 justify-content-between">
+    <img src="img/angular.png" class="w-4rem" />
+    <img src="img/aws.png" class="w-4rem" />
+        <img src="img/Postman.svg" class="w-2rem" />
+    <img src="img/Git.svg" class="w-2rem" />
+    <img src="img/Java-Light.svg" class="w-2rem" />
+    <img src="img/JavaScript (1).svg" class="w-2rem" />
+    <img src="img/mysql.png" class="w-5rem" />
+    <img src="img/py.png" class="w-3rem" />
+  </div>
+</div>
