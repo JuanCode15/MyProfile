@@ -29,6 +29,7 @@
               label="Ver CV"
               icon="pi pi-download"
               class="p-button-outlined p-button-lg"
+              (click)="DescargarCv()"
             ></button>
           </div>
         </div>
@@ -72,7 +73,12 @@
             integración entre sistemas. Gestión y manipulación de datos con SQL, mejorando la
             eficiencia en consultas y estructuras. Implementación en AWS, utilizando servicios
             serverless como Lambda, API Gateway y S3 para asegurar escalabilidad y disponibilidad.
-            Buenas prácticas de desarrollo, aplicando principios SOLID, uso de Git y optimización de
+            
+          </p>
+        </p-card>
+        <p-card class="about-card bg-black-alpha-10">
+          <p class="">
+          Buenas prácticas de desarrollo, aplicando principios SOLID, uso de Git y optimización de
             dependencias para mantener un código limpio y mantenible. Además, durante mi formación
             universitaria adquirí conocimientos en diferentes lenguajes y tecnologías como Java (con
             NetBeans), PHP, MySQL y JavaScript, lo que me ha dado una base sólida para adaptarme a
@@ -80,12 +86,6 @@
             continuar creciendo en el mundo del desarrollo, aportando soluciones innovadoras,
             escalables y seguras, mientras sigo ampliando mis conocimientos y fortaleciendo mis
             habilidades técnicas.
-          </p>
-        </p-card>
-        <p-card class="about-card bg-black-alpha-10">
-          <p class="">
-            Disfruto colaborar con equipos multidisciplinarios, participar en el diseño de producto
-            y automatizar procesos usando buenas prácticas DevOps.
           </p>
         </p-card>
       </div>
@@ -99,26 +99,25 @@
       </div>
 
       <div class="skills-grid ">
-        <p-card header="Frontend" subheader="UI moderna" class="skill-card bg-black-alpha-10">
+        <p-card header="Frontend" subheader="UI moderna" class="skill-card bg-black-alpha-10 text-white">
           <ul>
-            <li>Angular · RxJS · NgRx</li>
-            <li>PrimeNG · TailwindCSS</li>
-            <li>Arquitectura modular y diseño responsivo</li>
+            <li>Angular · React </li>
+            <li>PrimeNG · TailwindCSS · Boostrap</li>
+            <li>Diseño responsivo</li>
           </ul>
         </p-card>
 
-        <p-card header="Backend" subheader="APIs robustas" class="skill-card bg-black-alpha-10" >
+        <p-card header="Backend" subheader="APIs robustas" class="skill-card bg-black-alpha-10 text-white" >
           <ul>
-            <li>Node.js · Express · NestJS</li>
+            <li>AWS · PHP · JAVA</li>
             <li>Autenticación JWT / OAuth2</li>
-            <li>Diseño de APIs REST y validación</li>
+            <li>Diseño de APIs REST </li>
           </ul>
         </p-card>
 
-        <p-card header="Datos & DevOps" subheader="Producción" class="skill-card bg-black-alpha-10">
+        <p-card header="Datos & DevOps" subheader="Producción" class="skill-card bg-black-alpha-10 text-white">
           <ul>
-            <li>PostgreSQL · MongoDB</li>
-            <li>Docker · CI/CD básico</li>
+            <li>MySQL · RDS · AWS </li>
             <li>Monitoreo y buenas prácticas</li>
           </ul>
         </p-card>
@@ -126,24 +125,24 @@
     </section>
 
     <!-- PROYECTOS DESTACADOS -->
-    <section class="section" id="projects">
-      <div class="section-header">
+    <section class="section " id="projects">
+      <div class="section-header ">
         <h3>Proyectos</h3>
         <p>Algunos trabajos recientes y representativos.</p>
       </div>
 
       <div class="projects-grid ">
-        <p-card header="Dashboard de Analytics" subheader="Angular · Node.js" class="bg-black-alpha-10">
+        <p-card header="Classic Coffee" subheader="PHP · MySQL" class="bg-black-alpha-10 text-white">
           <p>
-            Panel interactivo para visualizar métricas de negocio en tiempo real, con filtros
-            avanzados y reportes exportables.
+           Classic Coffee es una aplicación web desarrollada en PHP (MVC) con base de datos MySQL, pensada para la gestión de reservas y administración de un café.
+Permite realizar y gestionar reservas, registrar usuarios, recibir sugerencias de clientes y administrar el personal desde un panel de control.
           </p>
           <ng-template pTemplate="footer">
             <button pButton type="button" label="Ver demo" class="p-button-text"></button>
           </ng-template>
         </p-card>
 
-        <p-card header="E-commerce" subheader="Angular · NestJS"  class="bg-black-alpha-10">
+        <p-card header="E-commerce" subheader="Angular · NestJS"  class="bg-black-alpha-10 text-white">
           <p>
             Tienda online con carrito, pasarela de pagos y panel de administración para gestión de
             productos y órdenes.
@@ -153,7 +152,7 @@
           </ng-template>
         </p-card>
 
-        <p-card header="Portal interno" subheader="SPA corporativa"  class="bg-black-alpha-10">
+        <p-card header="Portal interno" subheader="SPA corporativa"  class="bg-black-alpha-10 text-white">
           <p>
             Portal para gestión de procesos internos, autenticación con roles y permisos y flujos
             personalizados.

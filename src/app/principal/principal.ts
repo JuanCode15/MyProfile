@@ -14,4 +14,9 @@ import { Carusel } from '../carusel/carusel';
 })
 export class Principal {
 
+DescargarCv(){
+  window.open('/JuanCampo.pdf', '_blank')
+}
+
+
 }
