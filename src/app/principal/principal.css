@@ -206,6 +206,21 @@
     color: #38bdf8;
 }
 
+/* btn */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-img {
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .page .main {
@@ -216,3 +231,6 @@
         justify-content: center;
     }
 }
+
+
+
