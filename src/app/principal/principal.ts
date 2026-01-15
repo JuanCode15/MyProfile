@@ -7,7 +7,7 @@ import { Carusel } from '../carusel/carusel';
 
 @Component({
   selector: 'app-principal',
-  imports: [UiModule,Header,Carusel],
+  imports: [UiModule,Header],
   standalone: true,
   templateUrl: './principal.html', 
   styleUrl: './principal.css',
