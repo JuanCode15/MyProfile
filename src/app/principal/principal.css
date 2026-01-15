@@ -185,7 +185,7 @@
     color: #d1d5db;
 }
 
-/* Contacto */
+/* Contacto card */
 .page .contact-card-wrapper {
     max-width: 480px;
 }
@@ -198,7 +198,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0.2rem 0;
+    padding: 0.4rem 0;
     color: #e5e7eb;
 }
 
@@ -206,13 +206,33 @@
     color: #38bdf8;
 }
 
+/* btn */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-img {
+  width: 65px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
+    /* NOMBRE DEL Y STACK */
     .page .main {
-        padding-inline: 1rem;
+     margin: 1rem auto;
+    padding: 0 3rem;
     }
 
     .page .hero-content {
         justify-content: center;
     }
 }
+
+
+
