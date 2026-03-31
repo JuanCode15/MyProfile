@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { UiModule } from '../../ui/ui-module';
 import { AvatarModule } from 'primeng/avatar';
 import { ButtonModule } from 'primeng/button';
-
+import { Principal } from '../../principal/principal';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [UiModule,AvatarModule,ButtonModule],
+  imports: [UiModule, AvatarModule, ButtonModule],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })

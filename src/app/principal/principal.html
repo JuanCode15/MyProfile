@@ -2,11 +2,6 @@
   <app-header></app-header>
 
 
-  <a href="https://wa.me/573001234567" target="_blank" class="whatsapp-btn">
-    <img src="image-removebg-preview (1).png" alt="WhatsApp" class="whatsapp-img" />
-  </a>
-
-
   <main class="main">
     <!-- HERO / PRESENTACIÓN -->
     <section class="hero">
@@ -20,12 +15,18 @@
             mejores prácticas de arquitectura.
           </p>
           <div class="hero-actions">
-            <a href="#contact" class="p-button p-button-rounded p-button-lg primary no-underline">
+            <a href="https://wa.me/573001234567" target="_blank" class="p-button p-button-rounded p-button-lg primary no-underline">
               <i class="pi pi-send"></i> Contáctame
             </a>
 
-            <button pButton type="button" label="Ver CV" icon="pi pi-download" class="p-button-outlined p-button-lg"
-              (click)="DescargarCv()"></button>
+            <button
+              pButton
+              type="button"
+              label="Ver CV"
+              icon="pi pi-download"
+              class="p-button-outlined p-button-lg"
+              (click)="DescargarCv()"
+            ></button>
           </div>
         </div>
 
@@ -33,7 +34,7 @@
           <p-card class="hero-card">
             <ng-template pTemplate="header">
               <div class="hero-avatar-wrapper">
-                <img alt="Sebastián Campo" src="img/descarga.jpeg" />
+                <img alt="Sebastián Campo" src="img/YO.png" />
               </div>
             </ng-template>
             <div class="hero-card-body">
@@ -51,10 +52,10 @@
     <section class="section" id="about">
       <div class="section-header">
         <div>
-          <div class="flex align-items-center  m-1 font-bold  border-round">
-            <h3 class="m-0 p-0">Sobre mí</h3> <img src="img/py.png" class="w-2rem" />
+          <div class="flex align-items-center m-1 font-bold border-round">
+            <h3 class="m-0 p-0" id="Mi">Sobre mí</h3>
+            <img src="img/py.png" class="w-2rem" />
           </div>
-
         </div>
 
         <p>Un poco más de contexto sobre quién soy y cómo trabajo.</p>
@@ -62,9 +63,7 @@
 
       <div class="about-grid">
         <p-card class="about-card bg-black-alpha-10">
-
           <p class="  ">
-
             Soy Full Stack Developer con experiencia en el desarrollo de aplicaciones web
             empresariales y soluciones escalables, utilizando Angular, APIs REST, SQL y servicios en
             la nube de AWS (S3, Lambda, Cognito, API Gateway, entre otros). En Tata Consultancy
@@ -76,7 +75,6 @@
             integración entre sistemas. Gestión y manipulación de datos con SQL, mejorando la
             eficiencia en consultas y estructuras. Implementación en AWS, utilizando servicios
             serverless como Lambda, API Gateway y S3 para asegurar escalabilidad y disponibilidad.
-
           </p>
         </p-card>
         <p-card class="about-card bg-black-alpha-10">
@@ -95,56 +93,82 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="section " id="skills">
+    <section class="section" id="skills">
       <div class="section-header">
         <div>
-          <div class="flex align-items-center  m-1 font-bold  border-round">
-            <h3 class="m-0 p-0">Habilidades</h3> <img src="img/angular.png" class="w-3rem m-0 p-0" />
+          <div class="flex align-items-center m-1 font-bold border-round">
+            <h3 class="m-0 p-0">Habilidades</h3>
+            <img src="img/angular.png" class="w-3rem m-0 p-0" />
           </div>
-
         </div>
         <p>Stack principal y tecnologías con las que trabajo a diario.</p>
       </div>
 
-      <div class="skills-grid ">
-        <p-card header="Frontend" subheader="UI moderna" class="skill-card bg-black-alpha-10 text-white">
+      <div class="skills-grid">
+        <p-card
+          header="Frontend"
+          subheader="UI moderna"
+          class="skill-card bg-black-alpha-10 text-white"
+        >
           <ul>
-            <li>Angular </li>
+            <li>Angular</li>
             <li>PrimeNG · TailwindCSS · Boostrap</li>
             <li>Diseño responsivo</li>
-          <div class="flex">
-            <div class="flex align-items-center justify-content-center m-1 font-bold  border-round"> <img
-                src="img/prime.png" class="w-2rem" /></div>
-            <div class="flex align-items-center justify-content-center m-1 font-bold border-round"> <img
-                src="img/tailw.png" class="w-2rem" /></div>
-                 <div class="flex align-items-center justify-content-center m-1 font-bold border-round"> <img
-                src="img/Bootstrap.svg" class="w-2rem" /></div>
-          </div>
+            <div class="flex">
+              <div
+                class="flex align-items-center justify-content-center m-1 font-bold border-round"
+              >
+                <img src="img/prime.png" class="w-2rem" />
+              </div>
+              <div
+                class="flex align-items-center justify-content-center m-1 font-bold border-round"
+              >
+                <img src="img/tailw.png" class="w-2rem" />
+              </div>
+              <div
+                class="flex align-items-center justify-content-center m-1 font-bold border-round"
+              >
+                <img src="img/Bootstrap.svg" class="w-2rem" />
+              </div>
+            </div>
           </ul>
         </p-card>
 
-        <p-card header="Backend" subheader="APIs robustas" class="skill-card bg-black-alpha-10 text-white">
+        <p-card
+          header="Backend"
+          subheader="APIs robustas"
+          class="skill-card bg-black-alpha-10 text-white"
+        >
           <ul>
             <li>AWS · PHP · JAVA</li>
 
             <li>Autenticación JWT / OAuth2</li>
-            <li>Diseño de APIs REST </li>
+            <li>Diseño de APIs REST</li>
           </ul>
           <div class="flex">
-            <div class="flex align-items-center justify-content-center m-1 font-bold  border-round"> <img
-                src="img/aws.png" class="w-3rem" /></div>
-            <div class="flex align-items-center justify-content-center m-1 font-bold border-round"> <img
-                src="img/Java-Light.svg" class="w-2rem" /></div>
+            <div class="flex align-items-center justify-content-center m-1 font-bold border-round">
+              <img src="img/aws.png" class="w-3rem" />
+            </div>
+            <div class="flex align-items-center justify-content-center m-1 font-bold border-round">
+              <img src="img/Java-Light.svg" class="w-2rem" />
+            </div>
           </div>
         </p-card>
 
-        <p-card header="Datos & DevOps" subheader="Producción" class="skill-card bg-black-alpha-10 text-white">
+        <p-card
+          header="Datos & DevOps"
+          subheader="Producción"
+          class="skill-card bg-black-alpha-10 text-white"
+        >
           <ul>
-            <li>MySQL · AWS </li>
+            <li>MySQL · AWS</li>
             <li>Monitoreo y buenas prácticas</li>
             <div class="flex">
-              <div class="flex align-items-center justify-content-center m-1 font-bold border-round"> <img
-                  src="img/mysql.png" class="w-5rem" /></div>
+              <div
+                class="flex align-items-center justify-content-center m-1 font-bold border-round"
+              >
+                <img src="img/mysql.png" class="w-5rem" />
+              </div>
             </div>
           </ul>
         </p-card>
@@ -152,24 +176,28 @@
     </section>
 
     <!-- PROYECTOS DESTACADOS -->
-    <section class="section " id="projects">
-      <div class="section-header ">
+    <section class="section" id="projects">
+      <div class="section-header">
         <div>
-          <div class="flex align-items-center  m-1 font-bold  border-round">
-            <h3 class="m-2">Proyectos</h3> <img src="img/Git.svg" class="w-2rem" />
+          <div class="flex align-items-center m-1 font-bold border-round">
+            <h3 class="m-2">Proyectos</h3>
+            <img src="img/Git.svg" class="w-2rem" />
           </div>
-
         </div>
 
         <p>Algunos trabajos recientes y representativos.</p>
       </div>
 
-      <div class="projects-grid ">
-        <p-card header="Classic Coffee" subheader="PHP · MySQL" class="bg-black-alpha-10 text-white">
+      <div class="projects-grid">
+        <p-card
+          header="Classic Coffee"
+          subheader="PHP · MySQL"
+          class="bg-black-alpha-10 text-white"
+        >
           <p>
-            Classic Coffee es una aplicación web desarrollada en PHP (MVC) con base de datos MySQL, pensada para la
-            gestión de reservas y administración de un café.
-            Permite realizar y gestionar reservas, registrar usuarios, recibir sugerencias de clientes y administrar el
+            Classic Coffee es una aplicación web desarrollada en PHP (MVC) con base de datos MySQL,
+            pensada para la gestión de reservas y administración de un café. Permite realizar y
+            gestionar reservas, registrar usuarios, recibir sugerencias de clientes y administrar el
             personal desde un panel de control.
           </p>
           <ng-template pTemplate="footer">
@@ -179,12 +207,16 @@
           </ng-template>
         </p-card>
 
-        <p-card header="E-commerce" subheader="Angular · MySQL" class="bg-black-alpha-10 text-white">
+        <p-card
+          header="E-commerce"
+          subheader="Angular · MySQL"
+          class="bg-black-alpha-10 text-white"
+        >
           <p>
             Tienda online con carrito, pasarela de pagos y panel de administración para gestión de
             productos y órdenes.
-            <br>
-            <br>
+            <br />
+            <br />
             En desarrollo actualmente
           </p>
           <!-- <ng-template pTemplate="footer">
@@ -211,19 +243,28 @@
         <p>¿Tienes una idea o proyecto? Hablemos.</p>
       </div>
 
-      <div class="contact-card-wrapper ">
+      <div class="contact-card-wrapper">
         <p-card class="contact-card bg-black-alpha-10">
           <div class="contact-row">
             <i class="pi pi-envelope"></i>
-            <a href="mailto:juanscampo15@gmail.com" class="text-white no-underline"><span>Correo electrónico</span></a>
+            <a href="mailto:juanscampo15@gmail.com" class="text-white no-underline"
+              ><span>Correo electrónico</span></a
+            >
           </div>
           <div class="contact-row">
             <i class="pi pi-github"></i>
-            <a href="https://github.com/JuanCode15" target="_blank" class="text-white no-underline"><span>GitHub</span></a>
+            <a href="https://github.com/JuanCode15" target="_blank" class="text-white no-underline"
+              ><span>GitHub</span></a
+            >
           </div>
           <div class="contact-row">
             <i class="pi pi-linkedin"></i>
-            <a href="https://www.linkedin.com/in/sebastiancampo/" target="_blank" class="text-white no-underline"><span>LinkedIn</span></a>
+            <a
+              href="https://www.linkedin.com/in/sebastiancampo/"
+              target="_blank"
+              class="text-white no-underline"
+              ><span>LinkedIn</span></a
+            >
           </div>
         </p-card>
       </div>
